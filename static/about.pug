@@ -1,0 +1,22 @@
+extends base.pug
+block scripts 
+    scripts(src='./index.js')
+block style 
+    style 
+        include ./style.css 
+block content 
+    section#features.d-flex.jc-center
+        heading.heading Our Features
+        div.cards.d-flex
+            div.card.d-flex.ai-center #[img(src="/static/imgs/features1.jpg")] 
+                div
+                    h3 Best teachers 
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga nemo aliquid, perferendis.
+            div.card.d-flex.ai-center #[img(src="/static/imgs/features2.jpg")] 
+                div
+                    h3 More than 20 branches 
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga nemo aliquid, perferendis.
+            div.card.d-flex.ai-center #[img(src="/static/imgs/features3.jpg")] 
+                div
+                    h3 Amazing competitions and battles
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga nemo aliquid, perferendis.

@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,330&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+*{
+    margin: 0;padding: 0;
+}
+.d-flex{
+    display: flex;
+}
+.jc-center{
+    justify-content: center;
+}
+.ai-center{
+    align-items: center;
+}
+.navbar{
+    background-color: rgb(238, 57, 2);
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+.navbar ul li{
+    list-style: none;
+    padding: 1.5vh 2.3vw;
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 1.5vh 2vw;
+    font-size: 1.2em;
+    font-family: 'Nunito', sans-serif;
+}
+.navbar ul li a:hover{
+    color: brown;
+}
+
+.navbar ul div{
+    margin-left: 1vw ;
+}
+
+.navbar ul div img{
+    width: 40px;
+    border-radius:10px;
+    border: 2px solid rgb(84, 22, 22);
+}
+#img-section{
+    width: 100%;
+    height: 70vh;
+    background-blend-mode: darken;
+    animation: imageAnime 12s infinite;
+    transition: all 2s ease-out;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+} 
+
+#img-section h1{
+    font-size: 3.6em;
+    color: rgb(238, 57, 2);
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 0px 2px white;
+}
+#img-section p{
+    text-align: center;
+    font-family: 'Josefin sans', serif;
+    font-size: 1.5em;
+    text-shadow:0 .5px rgb(238, 57, 2);
+}
+
+#collaborations{
+    width: 90%;
+    margin: auto;
+    height: 55vh;
+    flex-direction: column;
+}
+
+.heading{
+    font-size: 2.9em;
+    color: rgb(238, 57, 2);
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 1px 2px rgb(150, 150, 231);
+    margin: 2vh 0;
+    text-align: center;
+}
+.cards{
+    justify-content: space-between;
+    margin: 2vh 0;
+}
+.card{
+    width: 27vw;
+    height: 30vh;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: white;
+    padding: 0 1vw;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+.card1{
+    background: url("/static/imgs/collacoration1.jpg") no-repeat center;
+    background-size: cover;
+}
+.card2{
+    background: url("/static/imgs/collacoration2.jpg") no-repeat center;
+    background-size: cover;
+}
+.card3{
+    background: url("/static/imgs/collacoration3.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.collaboration-name{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    margin: 1.5vh 0;
+}
+
+#features{
+    width: 100%;
+    margin: auto;
+    height: 50vh;
+    flex-direction: column;
+    background-color: rgba(165, 42, 42, 0.31);
+}
+.card img{
+    width: 13vw;
+    height: 13vw;
+    border-radius: 50%;
+    margin-left: 1.3vw;
+}
+
+.foot{
+    background-color: rgb(238, 57, 2);
+    padding: 2vh 0;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+#sponsers{
+    width: 100%;
+    margin: auto;
+    height: 40vh;
+    padding: 4vh 0;
+    flex-direction: column;
+    background-color: rgba(165, 42, 42, 0.31);
+}
+
+.sponser-party{
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+    margin-top: 3vw;
+}
+.box img{
+    width: 10vw;
+    height: 10vw;
+    border: 3px solid brown;
+    border-radius: 20px;
+}
+#contact{
+    width: 100%;
+    margin: auto;
+    height: 55vh;
+    /* padding: 4vh 0; */
+    flex-direction: column;
+}
+#contact form input{
+    width: 40vw;
+    text-align: center;
+    padding: 1vh 0;
+    margin: .7vh 0;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 1em;
+}
+#contact form{
+    flex-direction: column;
+    font-family: 'Roboto Slab', serif;
+}
+#contact form button{
+    width: 8vw;
+    padding: 1vh;
+    margin-top: 1vh;
+    font-family: 'Roboto Slab', serif;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: .9em;
+    color: white;
+    background-color: rgb(238, 57, 2);
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes imageAnime{
+    0%{
+    background:rgba(0, 0, 0, 0.4) url('/static/imgs/slider1.jpg') no-repeat center;
+    background-size: cover;
+    animation: moreOnImage 2s linear;
+    }35%{
+        background:rgba(0, 0, 0, 0.4) url('/static/imgs/slider2.jpg') no-repeat center;
+        background-size: cover;
+    }70%{
+        background:rgba(0, 0, 0, 0.4) url('/static/imgs/slider3.jpg') no-repeat center;
+        background-size: cover;
+    }100%{
+        background:rgba(0, 0, 0, 0.4) url('/static/imgs/slider1.jpg') no-repeat center;
+        background-size: cover;
+    }
+} 

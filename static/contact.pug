@@ -1,0 +1,16 @@
+extends ./base.pug
+block scripts 
+    script(src='index.js')
+block style
+    style 
+        include ./style.css
+block content
+    section#contact.d-flex.jc-center.ai-center
+        heading.heading Contact Us
+        form(action="/contact", method="post" name="contact").d-flex.ai-center
+            input(type="text",name="name" placeholder="Enter your name...")
+            input(type="text",name="age" placeholder="Enter your age...")
+            input(type="text",name="gender" placeholder="Enter your gender...")
+            input(type="text",name="phoneNo" placeholder="Enter your phone no...")
+            input(type="text",name="address" placeholder="Enter your address...")
+            button Submit

@@ -1,0 +1,31 @@
+extends base.pug
+block scripts 
+    script(src='./index.js')
+block style 
+    style 
+        include ./style.css 
+block content
+    section#img-section
+        h1 Welcome to My Dance Academy
+        p Admission open for our brand. Hurry Up! get admitted in the <br>best academy
+    section#collaborations.d-flex.jc-center
+            heading.heading Academy Collaborations 
+            div.cards.d-flex
+                div
+                    div.card.d-flex.jc-center.card1
+                    h3.collaboration-name Remo D'souza sir
+                div
+                    div.card.d-flex.jc-center.card2
+                    h3.collaboration-name PrabhuDeva  sir
+                div
+                    div.card.d-flex.jc-center.card3
+                    h3.collaboration-name Terrance sir
+    section#sponsers.d-flex.ai-center
+        heading.heading.d-flex.jc-center Our Sponsers
+        .sponser-party.d-flex 
+            div.box #[img(src='/static/imgs/sponser1.jpg')]
+            div.box #[img(src='/static/imgs/sponser2.jpg')]
+            div.box #[img(src='/static/imgs/sponser3.png')]
+            div.box #[img(src='/static/imgs/sponser4.png')]
+            div.box #[img(src='/static/imgs/sponser5.png')]
+            div.box #[img(src='/static/imgs/sponser6.png')]
